@@ -19,7 +19,6 @@
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
 
-
   @keyframes float {
     0%,
     100% {
@@ -70,7 +69,7 @@
 
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary: 295 72% 65%;
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
@@ -82,7 +81,7 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
+    --primary: 292 80% 65%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -128,21 +127,37 @@
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
+/* 🌌 Cosmic Utilities */
+@utility cosmic-gradient {
+  @apply bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600;
+}
+
+@utility cosmic-text {
+  @apply bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent;
+}
+
+@utility cosmic-button {
+  @apply px-6 py-2 rounded-full cosmic-gradient text-white font-medium
+        transition-all duration-300 shadow-md hover:shadow-[0_0_15px_rgba(217,70,239,0.6)]
+        hover:scale-105 active:scale-95;
+}
+
+@utility cosmic-bar {
+  @apply h-2 rounded-full cosmic-gradient;
+}
+
 @utility card-hover {
   @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
 }
 
+/* 🌌 Cosmic Gradient Border */
 @utility gradient-border {
-  @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-  background-clip: padding-box;
-  border: 1px solid transparent;
+  @apply relative rounded-md p-[1px];
+  background: linear-gradient(to right, #ec4899, #d946ef, #9333ea);
 }
 
-@utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-        transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] 
-        hover:scale-105 active:scale-95;
+.gradient-border > * {
+  @apply bg-card rounded-md;
 }
 
 @utility star {
