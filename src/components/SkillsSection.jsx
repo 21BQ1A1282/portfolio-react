@@ -3,24 +3,24 @@ import { useState } from "react";
 
 const skills = [
 
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "HTML/CSS", level: 90, category: "frontend" },
+  { name: "JavaScript", level: 60, category: "frontend" },
+  { name: "React", level: 60, category: "frontend" },
+  { name: "Tailwind CSS", level: 50, category: "frontend" },
 
-  { name: "Java", level: 85, category: "backend" },
+  { name: "Java", level: 90, category: "backend" },
   { name: "Python", level: 75, category: "backend" },
   { name: "Spring Boot", level: 80, category: "backend" },
   { name: "REST APIs", level: 85, category: "backend" },
 
-  { name: "SQL", level: 80, category: "database" },
+  { name: "SQL", level: 75, category: "database" },
   { name: "MySQL", level: 80, category: "database" },
   { name: "MongoDB", level: 70, category: "database" },
   { name: "PostgreSQL", level: 65, category: "database" },
 
-  { name: "Git/GitHub", level: 85, category: "cloud/devops" },
-  { name: "Google Cloud (GCP)", level: 75, category: "cloud/devops" },
-  { name: "Linux", level: 75, category: "cloud/devops" },
+  { name: "Git/GitHub", level: 80, category: "cloud/devops" },
+  { name: "Google Cloud (GCP)", level: 50, category: "cloud/devops" },
+  { name: "Linux", level: 60, category: "cloud/devops" },
 
   { name: "Postman", level: 80, category: "tools" },
   { name: "VS Code", level: 90, category: "tools" },

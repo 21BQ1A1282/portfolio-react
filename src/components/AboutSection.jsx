@@ -1,24 +1,6 @@
-import { Cloud, Code, Database } from "lucide-react";
 
 export const AboutSection = () => {
-  const skillsData = [
-    {
-      icon: Code,
-      title: "Full-Stack Development",
-      desc: "Building responsive web applications with Java, Spring Boot, JavaScript, and modern frameworks.",
-    },
-    {
-      icon: Database,
-      title: "Backend Engineering",
-      desc: "Developing secure REST APIs, database systems, and high-performance server logic.",
-    },
-    {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      desc: "Deploying and managing applications using GCP, Git, and modern DevOps practices.",
-    },
-  ];
-
+  
   return (
     <section
       id="about"
@@ -33,7 +15,7 @@ export const AboutSection = () => {
           {/* Left */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Full-Stack Developer & Problem Solver
+              Passionate Full-Stack / Backend Developer & Problem Solver
             </h3>
             <p className="text-gray-400">
               A motivated and results-driven developer with hands-on experience
@@ -64,24 +46,20 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right - Cards */}
-          <div className="grid grid-cols-1 gap-6">
-            {skillsData.map((item, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-2xl bg-card dark:bg-card border border-fuchsia-500/20 card-hover transition-all duration-300"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-full cosmic-gradient">
-                    <item.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="font-semibold text-lg">{item.title}</h4>
-                    <p className="text-gray-400">{item.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Right - Image Section */}
+          <div className="relative w-64 h-64 md:w-80 md:h-80 opacity-0 animate-fade-in-delay-2 mx-auto">
+            {/* Floating background layers */}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-600/20 blur-xl animate-float" style={{animationDelay: '0.5s'}}></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-fuchsia-500/30 to-purple-500/30 blur-md animate-float" style={{animationDelay: '1s'}}></div>
+            
+            {/* Main image container */}
+            <div className="relative w-full h-full rounded-4xl overflow-hidden animate-float">
+              <img
+                src="/profile.png"
+                alt="Sai Manikanta Madhavarapu"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
