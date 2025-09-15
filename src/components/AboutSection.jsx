@@ -17,13 +17,13 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-semibold">
               Passionate Full-Stack / Backend Developer & Problem Solver
             </h3>
-            <p className="text-gray-400">
+            <p className="transition-colors">
               A motivated and results-driven developer with hands-on experience
               building full-stack applications using Java, Spring Boot, and
               modern web technologies. I specialize in creating efficient
               backend systems, RESTful APIs, and responsive user interfaces.
             </p>
-            <p className="text-gray-400">
+            <p className="transition-colors">
               I'm passionate about solving complex problems through clean code
               and optimized algorithms, with proven skills demonstrated through
               competitive programming achievements and cloud certifications.
@@ -39,7 +39,7 @@ export const AboutSection = () => {
               <a
                 href="/resume.pdf"
                 download
-                className="px-6 py-3 rounded-full border border-fuchsia-500 text-fuchsia-400 hover:bg-fuchsia-500/10 transition-colors duration-300"
+                className="px-6 py-3 rounded-full border border-fuchsia-500 text-fuchsia-600 hover:bg-fuchsia-500/10 transition-colors duration-300"
               >
                 Download CV
               </a>

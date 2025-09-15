@@ -31,25 +31,30 @@ export const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#hero"
-          className="text-xl font-extrabold flex items-center cosmic-text"
-        >
-          Sai Manikanta Portfolio
+        <a href="#hero" className="text-3xl font-bold flex cursor-pointer">
+          <span className="text-primary">M</span>
+          SM
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="cosmic-text hover:scale-110 transition-transform duration-300"
+              className="hover:text-pink-400 transition-colors group relative"
             >
               {item.name}
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
+          {/* Hire Me Button */}
+          <a
+            href="#contact"
+            className="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-md hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            Hire Me
+          </a>
         </div>
 
         {/* Mobile nav button */}
@@ -70,7 +75,7 @@ export const Navbar = () => {
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-2xl font-semibold">
+          <div className="flex flex-col space-y-8 text-2xl font-semibold items-center">
             {navItems.map((item, key) => (
               <a
                 key={key}
@@ -81,6 +86,14 @@ export const Navbar = () => {
                 {item.name}
               </a>
             ))}
+            {/* Mobile Hire Me Button */}
+            <a
+              href="#contact"
+              className="mt-4 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-md text-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Hire Me
+            </a>
           </div>
         </div>
       </div>

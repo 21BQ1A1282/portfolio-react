@@ -42,7 +42,7 @@ export const ProjectsSection = () => {
           Featured <span className="cosmic-text">Projects</span>
         </h2>
 
-        <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-center transition-colors mb-12 max-w-2xl mx-auto">
           Here are some of my hands-on projects that demonstrate my technical
           skills in full-stack development, database management, and
           problem-solving.
@@ -71,7 +71,7 @@ export const ProjectsSection = () => {
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-pink-500/20 to-purple-600/20 text-fuchsia-300 border border-fuchsia-500/30"
+                      className="px-2 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-pink-500/20 to-purple-600/20 text-fuchsia-600 border border-fuchsia-500/30"
                     >
                       {tag}
                     </span>
@@ -80,7 +80,7 @@ export const ProjectsSection = () => {
 
                 {/* Title + Description */}
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+                <p className="transition-colors text-sm mb-4">{project.description}</p>
 
                 {/* Links */}
                 <div className="flex justify-between items-center">
@@ -88,14 +88,14 @@ export const ProjectsSection = () => {
                     <a
                       href={project.demoUrl}
                       target="_blank"
-                      className="text-gray-300 hover:cosmic-text transition-colors duration-300"
+                      className="text-black-300 hover:cosmic-text transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
                     </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="text-gray-300 hover:cosmic-text transition-colors duration-300"
+                      className="text-balck-300 hover:cosmic-text transition-colors duration-300"
                     >
                       <Github size={20} />
                     </a>

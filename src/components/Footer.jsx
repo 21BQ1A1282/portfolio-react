@@ -2,7 +2,7 @@ import { ArrowUp } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="text-gray-400 py-8">
+    <footer className="transition-colors-400 py-8">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
         {/* Copyright */}
         <p className="text-center md:text-left">
