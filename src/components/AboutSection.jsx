@@ -1,6 +1,6 @@
 
 export const AboutSection = () => {
-  
+
   return (
     <section
       id="about"
@@ -49,9 +49,9 @@ export const AboutSection = () => {
           {/* Right - Image Section */}
           <div className="relative w-64 h-64 md:w-80 md:h-80 opacity-0 animate-fade-in-delay-2 mx-auto">
             {/* Floating background layers */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-600/20 blur-xl animate-float" style={{animationDelay: '0.5s'}}></div>
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-fuchsia-500/30 to-purple-500/30 blur-md animate-float" style={{animationDelay: '1s'}}></div>
-            
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-600/20 blur-xl animate-float" style={{ animationDelay: '0.5s' }}></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-fuchsia-500/30 to-purple-500/30 blur-md animate-float" style={{ animationDelay: '1s' }}></div>
+
             {/* Main image container */}
             <div className="relative w-full h-full rounded-4xl overflow-hidden animate-float">
               <img
